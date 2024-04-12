@@ -1,0 +1,35 @@
+{
+  "name": "currency",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config app.js",
+    "start": "node -r dotenv/config app.js",
+    "migrate": "node -r dotenv/config migrate.js",
+    "update-currency": "node -r dotenv/config updateCurrency.js",
+    "lint": "eslint .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@fastify/jwt": "^8.0.0",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.26.2",
+    "fastify-plugin": "^4.5.1",
+    "lodash": "^4.17.21",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^9.0.11",
+    "nodemon": "^3.0.1"
+  },
+  "engines" : {
+    "node" : ">=16"
+  }
+}
