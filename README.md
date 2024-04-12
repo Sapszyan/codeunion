@@ -1,10 +1,7 @@
 # `Currencies Project`
 
-## Installation
-
-`Make sure you created .env`
-
-`Copy from .env.example to .env`
+### Configuration Setup
+In root directory create a configuration file named `.env` based on the provided `.env.example`.
 
 ## Migration
 ```
